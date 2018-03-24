@@ -1,0 +1,14 @@
+{
+  "name": "About",
+  "description": "关于 [已完成]",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": false
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

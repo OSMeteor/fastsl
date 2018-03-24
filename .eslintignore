@@ -1,0 +1,7 @@
+/client/
+/test/
+/server/common/models1/
+/server/common/lib/
+/server/common/legacy/
+/app/test/
+/app/lib/sync_redis/

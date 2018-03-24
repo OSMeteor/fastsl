@@ -1,0 +1,62 @@
+/*
+ * @Author: dongyuxuan 
+ * @Date: 2017-10-25 13:54:59 
+ * @Last Modified by: dongyuxuan
+ * @Last Modified time: 2017-11-02 15:53:30
+ */
+syntax = "proto3";
+
+// import "google/protobuf/any.proto";
+package commonPackage;
+
+service commonService {
+  rpc invoke (request) returns (reply) {}
+}
+ 
+message request {
+  string json = 1;
+  string invokeFunc = 2;
+  string access_token = 3;  
+}
+message reply {
+  string json = 1;
+}
+// message FindRequest {
+//   repeated string fields = 1;
+//   Where where = 2;
+//   string order = 3;
+//   int32 limit = 4;
+//   int32 skip = 5;
+// }
+
+// message FindReply {
+//   repeated ShopProduct shopProduct = 1;
+// }
+
+// message Where {
+//   optional int32 category_id = 1;
+//   optional int32 status = 2;
+//   optional string goods_name = 3;
+// }
+
+// message ShopProduct {
+//   int32 id = 1;
+//   int32 category_id = 2;
+//   string goods_sn = 3;
+//   string goods_name = 4;
+//   string goods_ico = 5;
+//   string goods_introduct = 6;
+//   string goods_detail = 7;
+//   string page_url = 8;
+//   int32 click_count = 9;
+//   int32 goods_sum = 10;
+//   int32 ctime = 11;
+//   int32 mtime = 12;
+//   int32 status = 13;
+//   int32 sell_num = 14;
+//   float goods_market_price = 15;
+//   float goods_price = 16;
+//   float goods_weight = 17;
+//   int32 is_hot = 18;
+// }
+

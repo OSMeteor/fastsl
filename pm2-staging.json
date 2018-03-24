@@ -1,0 +1,11 @@
+{
+  "name":"fastsl",
+  "autorestart":true,
+  "script":"server/server.js",
+  "instances"  : 8,
+  "exec_mode"  : "cluster",
+  "node-args": "--nouse-idle-notification --gc_global --max-old-space-size=2048 --max-new-space-size=1024",
+  "env":{
+    "NODE_ENV":"staging"
+  }
+}

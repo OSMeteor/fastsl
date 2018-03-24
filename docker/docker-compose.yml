@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  redis:
+      image: tutum/redis
+      ports:
+        - '7379:6379'
+      volumes:
+        - './redis/data/db:/data/db'
+      environment:
+        # ALLOW_EMPTY_PASSWORD is recommended only for development.
+        - REDIS_PASS="12345678"
+        - REDIS_TCP_KEEPALIVE=120
+
+  mysql:
+        image: mysql
+        ports:
+          - '4306:3306'
+        volumes:
+          - './mysql/data/db:/var/lib/mysql'
+        environment:
+          - MYSQL_ROOT_PASSWORD=123456

@@ -1,0 +1,9 @@
+instrumentation:
+    extensions:
+        - .js
+    excludes: ['server/server.js', 'app/test/**', 'node_modules']
+check:
+    global:
+        lines: 90
+        functions: 90
+        branchs: 90
