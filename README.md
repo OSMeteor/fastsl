@@ -1,7 +1,10 @@
 # My Application
 
 
+### 原理
 
+
+![./fastsl.png](fastsl.png)
 #
 
 -   https://github.com/hapijs/joi  验证数据类型
@@ -45,7 +48,7 @@ app  核心业务  包括与数据库交互 数据流数据字典
     - mysql  mysql 数据库交互相关
     - redis  redis 数据库存取相关
 client  客户端html
-common  对外的API服务
+common  对外的API服务  绑定控制器 controllers
 doc    项目相关文档
 docker  docker 便于本地开发测试
 node_modeules  nodejs 模块
